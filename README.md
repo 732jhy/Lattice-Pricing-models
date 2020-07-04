@@ -1,2 +1,2 @@
-# Binomial-Asset-Pricing-Model
-Tree pricing methods for European and American options
+# Lattice-Pricing-Models
+Tree pricing methods for European and American call and put options

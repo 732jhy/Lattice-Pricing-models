@@ -35,11 +35,6 @@ def tapm(S0,K,r,sigma,T,q,n,CallPut,EurAm):
     if deltaX < sigma*np.sqrt(3*deltaT):
         deltaX = sigma*np.sqrt(3*deltaT)
     
-    # Probabilities specified by Options, Futures, and Other Derivatives (Hull, Ch. 21). These yield very similar values to what's used below
-    # pu = np.sqrt(deltaT/(12*sigma**2))*D+1/6
-    # pm = 2/3
-    # pd = 1/6 - np.sqrt(deltaT/(12*sigma**2))*D
-    
     pu = 0.5*(((sigma**2*deltaT +D**2*deltaT**2)/deltaX**2) + (deltaT*D/deltaX))
     pm = 1 - ((deltaT*sigma**2 + D**2*deltaT**2)/deltaX**2)
     pd = 0.5*(((sigma**2*deltaT +D**2*deltaT**2)/deltaX**2) - (deltaT*D/deltaX))

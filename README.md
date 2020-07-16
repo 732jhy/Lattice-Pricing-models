@@ -1,2 +1,2 @@
 # Lattice-Pricing-Models
-Tree pricing methods for European and American call and put options
+Binomial and trinomial asset pricing models for European and American call and put options
